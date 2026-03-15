@@ -110,7 +110,7 @@ app.post("/api", (req, res) => {
     );
   }
 
-  return json("Unknown", "CONTACT mruptimee TO ADD SUPPORT TO OBF");
+  return json("Unknown", "CONTACT mruptimee. TO ADD SUPPORT TO OBF");
 });
 
 app.listen(3000, () => console.log("Obf detector API running on port 3000"));
