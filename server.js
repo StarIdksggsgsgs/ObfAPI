@@ -4,7 +4,7 @@ app.use(express.text({ type: "*/*" }));
 
 app.post("/api", (req, res) => {
   const input = req.body;
-  const json = (dumper, confidence) => res.json({ Dumper: dumper, Confidence: confidence });
+  const json = (dumper, confidence) => res.json({ Obf: dumper, Confidence: confidence });
 
   if (input.includes("https://lura.ph/")) return json("Luraph", "100%");
   if (/--\[\[\s*v1\.0\.0\s*https:\/\/wearedevs\.net\/obfuscator\s*\]\]/.test(input)) return json("Wearedevs", "100%");
